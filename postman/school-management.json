@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "cfa0b7b5-d399-4a6f-9ca6-3d997babacc8",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45163351"
+  },
+  "item": [
+    {
+      "name": "School Management API",
+      "item": [
+        {
+          "name": "List School Api",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://school-management-api-7831.onrender.com/api/listSchools?latitude=19.0760&longitude=72.8777",
+              "protocol": "https",
+              "host": [
+                "school-management-api-7831",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "listSchools"
+              ],
+              "query": [
+                {
+                  "key": "latitude",
+                  "value": "19.0760"
+                },
+                {
+                  "key": "longitude",
+                  "value": "72.8777"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add School Api",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"XYZ School\",\r\n  \"address\": \"Indore\",\r\n  \"latitude\": 10.0760,\r\n  \"longitude\": 32.8777\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://school-management-api-7831.onrender.com/api/addSchool",
+              "protocol": "https",
+              "host": [
+                "school-management-api-7831",
+                "onrender",
+                "com"
+              ],
+              "path": [
+                "api",
+                "addSchool"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
