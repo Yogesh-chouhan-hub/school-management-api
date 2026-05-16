@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 sequelize
-  .authenticate()
+  .sync()
   .then(() => {
     console.log("Database connected successfully");
 
